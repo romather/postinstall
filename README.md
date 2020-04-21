@@ -18,7 +18,7 @@ Com isso demos permissão de execução para o script.
 
 E por fim, executar o script:
 
-```sudo ./instalar.sh```
+```sh instalar.sh``` ou ```./instalar.sh```
 
 Aguarde a finalização e pronto!
 
