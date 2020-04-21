@@ -12,8 +12,11 @@ Fazer clone do repositório:
 
 Entrar no diretório postinstall e digitar:
 
-```sudo chmod +x instalar.sh```- com isso demos permissão de execução ao arquivo e
-```sudo ./instalar.sh``` para finalmente executar o arquivo
+```sudo chmod +x instalar.sh```- com isso demos permissão de execução ao arquivo.
+
+E
+
+```sudo ./instalar.sh``` - para finalmente executar o arquivo
 
 Aguarde a finalização e pronto!
 
