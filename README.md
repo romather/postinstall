@@ -1,4 +1,4 @@
-# Post install
+# Pós instalação Ubuntu
 
 Script de pós instalação para o ubuntu
 
