@@ -12,14 +12,11 @@ sudo apt update && sudo apt dist-upgrade -y &&
 
 sudo apt install ttf-mscorefonts-installer software-properties-common apt-transport-https curl python3 python-pip git build-essential libssl-dev flatpak gnome-software-plugin-flatpak openjdk-11-jre-headless openjdk-11-jdk-headless icedtea-netx -y &&
 
-## Instalando chrome e brave ##
+## Instalando chrome ##
 
 wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo dpkg -i *.deb &&
 sudo apt --fix-broken install &&
-curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add - &&
-echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list &&
-sudo apt update &&
-sudo apt brave-browser -y &&
+rm *.deb &&
 
 ## Instalando pacotes snap ##
 
