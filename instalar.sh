@@ -10,7 +10,7 @@ sudo apt update && sudo apt dist-upgrade -y &&
 
 ## Instalando pacotes e programas ##
 
-sudo apt install ttf-mscorefonts-installer software-properties-common apt-transport-https curl python3 python-pip git build-essential libssl-dev flatpak gnome-software-plugin-flatpak openjdk-14-jre-headless openjdk-14-jdk-headless icedtea-netx -y &&
+sudo apt install ttf-mscorefonts-installer software-properties-common apt-transport-https curl python3 python-pip git build-essential libssl-dev flatpak gnome-software-plugin-flatpak openjdk-11-jre-headless openjdk-11-jdk-headless icedtea-netx -y &&
 
 ## Instalando chrome e brave ##
 
