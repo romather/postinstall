@@ -8,9 +8,14 @@ sudo rm /var/lib/dpkg/lock-frontend ; sudo rm /var/cache/apt/archives/lock ;
 
 sudo apt update && sudo apt dist-upgrade -y &&
 
+## Adicionando repo do variety ##
+## Variety: trocador de imagens do fundo de tela
+
+sudo add-apt-repository ppa:peterlevi/ppa -y &&
+
 ## Instalando pacotes e programas ##
 
-sudo apt install gdebi-core ttf-mscorefonts-installer software-properties-common apt-transport-https curl python3 python-pip git build-essential libssl-dev flatpak gnome-software-plugin-flatpak openjdk-11-jre-headless openjdk-11-jdk-headless icedtea-netx -y &&
+sudo apt install gdebi-core ttf-mscorefonts-installer software-properties-common apt-transport-https curl python3 python-pip git build-essential libssl-dev flatpak gnome-software-plugin-flatpak openjdk-11-jre-headless openjdk-11-jdk-headless icedtea-netx variety -y &&
 
 ## Instalando chrome ##
 
