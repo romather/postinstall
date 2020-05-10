@@ -10,7 +10,7 @@ Fazer clone do repositório:
 
 ```git clone https://github.com/romather/postinstall.git```
 
-Entrar no diretório postinstall e digitar:
+Entrar no diretório postinstall com o comando ```cd postinstall``` e digitar:
 
 ```sudo chmod +x instalar.sh```- com isso demos permissão de execução ao arquivo.
 
