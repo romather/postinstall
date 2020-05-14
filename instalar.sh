@@ -21,6 +21,8 @@ rm *.deb &&
 
 sudo snap install vlc 
 sudo snap install telegram-desktop
+sudo snap install skype --classic
+sudo snap install opera
 
 ## Adicionando repositório Flathub ##
 
