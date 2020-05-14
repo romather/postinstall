@@ -34,4 +34,4 @@ sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt
 
 ## Finalizando ##
 
-echo "Instalação finalizada com sucesso. Aproveite seu novo sistema."
+echo "Instalação finalizada com sucesso."
