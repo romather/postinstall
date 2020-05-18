@@ -10,7 +10,7 @@ sudo apt update && sudo apt dist-upgrade -y &&
 
 ## Instalando pacotes e programas ##
 
-sudo apt install gdebi ttf-mscorefonts-installer software-properties-common apt-transport-https curl git build-essential libssl-dev flatpak gnome-software-plugin-flatpak -y &&
+sudo apt install gdebi ttf-mscorefonts-installer software-properties-common apt-transport-https curl git build-essential libssl-dev flatpak gnome-software-plugin-flatpak gparted -y &&
 
 ## Instalando chrome ##
 
