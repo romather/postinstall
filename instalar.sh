@@ -6,32 +6,56 @@ sudo rm /var/lib/dpkg/lock-frontend ; sudo rm /var/cache/apt/archives/lock ;
 
 ## Atualizando o sistema ##
 
-sudo apt update && sudo apt dist-upgrade -y &&
+sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y &&
 
 ## Instalando pacotes e programas ##
 
-sudo apt install gdebi ttf-mscorefonts-installer software-properties-common apt-transport-https curl git build-essential libssl-dev flatpak gnome-software-plugin-flatpak gparted -y &&
+if $(uname -m | grep 'x86_64'); then
+   
+    sudo apt install gdebi ttf-mscorefonts-installer software-properties-common apt-transport-https curl git build-essential libssl-dev flatpak gnome-software-plugin-flatpak gparted -y &&
 
-## Instalando chrome ##
+    ## Instalando chrome ##
 
-wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo gdebi *.deb &&
-rm *.deb &&
+    wget -c https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo gdebi *.deb &&
+    rm *.deb &&
 
-## Instalando pacotes snap ##
+    ## Atualizando o sistema ##
 
-sudo snap install vlc 
-sudo snap install telegram-desktop
-sudo snap install skype --classic
-sudo snap install opera
+    sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y &&
 
-## Adicionando repositório Flathub ##
+    ## Instalando pacotes snap ##
 
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo &&
+    sudo snap install vlc 
+    sudo snap install telegram-desktop
+    sudo snap install skype --classic
+    sudo snap install opera
 
-## Atualizando e limpando ##
+    ## Adicionando repositório Flathub ##
 
-sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y &&
+    flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo &&
 
-## Finalizando ##
+    ## Atualizando e limpando ##
 
-echo "Instalação finalizada com sucesso."
+    sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y
+else
+    sudo apt install gdebi ttf-mscorefonts-installer software-properties-common apt-transport-https curl git build-essential libssl-dev flatpak gnome-software-plugin-flatpak gparted -y &&
+    
+    ## Atualizando o sistema ##
+
+    sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y &&
+
+    ## Instalando pacotes snap ##
+
+    sudo snap install vlc 
+    sudo snap install telegram-desktop
+    sudo snap install skype --classic
+    sudo snap install opera
+
+    ## Adicionando repositório Flathub ##
+
+    flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo &&
+
+    ## Atualizando e limpando ##
+
+    sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y    
+fi
