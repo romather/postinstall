@@ -2,6 +2,8 @@
 
 Script de pós instalação para o ubuntu
 
+# O script detectará se a versão do ubuntu é 32 bits ou 64 bits.
+
 Entrar no terminal e digitar o comando abaixo para instalar o git, informando a senha quando necessário:
 
 ```sudo apt install git -y```
